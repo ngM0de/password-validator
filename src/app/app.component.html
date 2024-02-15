@@ -1,0 +1,8 @@
+@if ((stateService.passwordStatus$ | async);as passwordStatus) {
+    <main class="app-container">
+        <app-input class="input"></app-input>
+        @if (passwordStatus?.length) {
+            <app-password-status-bar [passwordStatus]="passwordStatus"></app-password-status-bar>
+        }
+    </main>
+}

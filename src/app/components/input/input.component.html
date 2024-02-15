@@ -1,0 +1,9 @@
+<div class="input-container">
+    <input
+            type="text"
+            class="input"
+            [formControl]="input"
+            (focusout)="focus($event)"
+            (input)="replaceSpace($event)"
+            autofocus>
+</div>
